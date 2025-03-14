@@ -15,7 +15,7 @@ function App() {
         setUserInput(prev=> {
             return{
                 ...prev,
-                [inputIdentifier]: newValue
+                [inputIdentifier]: +newValue // this + forces the value to be converted to a number
             }
         })
     }
